@@ -1,6 +1,6 @@
 # AutoML with TPOT and GPT-4
 
-In this project, we are using AutoML with TPOT and GPT-4 to find the best machine learning model for our dataset.
+In this project, we are using AutoML with TPOT and GPT-4 to find the best machine learning model for our dataset.The project is implemented using Python 3.8.16 in a Conda environment.
 
 ## Project Overview
 

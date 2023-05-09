@@ -23,7 +23,6 @@ except FileNotFoundError:
 target = input("Enter target value: ")    
 
 prompt_code = (
-        f"You are a 'AutoML Expert' to help us throughout the entire AutoML process. This role would involve:1. Understanding the dataset,2. Preprocessing and feature engineering,3. Model selection and hyperparameter tuning,4. Evaluation and interpretation,5. Deployment and monitoring. By taking on this role, you can provide valuable guidance and expertise throughout the AutoML process, ensuring that you make informed decisions and obtain the best possible results from the models you build.\n"
         f"Goal 1: load dataset from {file} and preprocess the dataset and perform feature engineering.\n"
         f"Goal 2: Analyze the data if it's a classification problem or Regression problem.\n"
         f"Goal 3: Check if there is any non-numeric column, if there is any use pd.get_dummies()\n"
@@ -35,7 +34,7 @@ prompt_code = (
 )
 
 messages_code = [
-    {"role": "system", "content": "You are a Python programmer.Use '#' before every line except the python code.\n"},
+    {"role": "system", "content": "You are a 'AutoML Expert' to help us throughout the entire AutoML process. This role would involve:1. Understanding the dataset,2. Preprocessing and feature engineering,3. Model selection and hyperparameter tuning,4. Evaluation and interpretation,5. Deployment and monitoring. By taking on this role, you can provide valuable guidance and expertise throughout the AutoML process, ensuring that you make informed decisions and obtain the best possible results from the models you build. Use '#' before every line except the python code.\n"},
     {"role": "user", "content": prompt_code}
 ]
 
